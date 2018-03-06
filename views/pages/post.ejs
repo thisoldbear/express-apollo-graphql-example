@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <title><%= post.title %></title>
+</head>
+<body class="container">
+
+<main>
+    <p><a href="/">Back</a></p>
+    <h2><%= post.title %></h2>
+    <p><%= post.content %></p>
+    <img style="width: 100px;" src="<%= post.coverImage.url %>" />
+</main>
+
+</body>
+</html>

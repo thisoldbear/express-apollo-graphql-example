@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <title>Express and GraphQl</title>
+</head>
+<body class="container">
+
+<main>
+    <% for(let i = 0; i < posts.length; i++) { %>
+        <h2><%= posts[i].title %></h2>
+        <div>
+            <%= posts[i].content %>
+        </div>
+        <img style="width: 100px;" src="<%= posts[i].coverImage.url %>" />
+        <p><a href="posts/<%= posts[i].id %>">Click me</a></p>
+        <hr />
+    <% } %>
+</main>
+
+</body>
+</html>
