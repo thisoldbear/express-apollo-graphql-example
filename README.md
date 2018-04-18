@@ -14,4 +14,10 @@ $ npm install
 $ node index.js
 ```
 
-Starts a server at `http://localhost:4000`
+or
+
+```sh
+$ npm run start
+```
+
+Starts a server at `http://localhost:3000`
